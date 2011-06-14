@@ -1,0 +1,17 @@
+{
+  "author": "Brian Hammond <brian@fictorial.com> (http://fictorial.com)",
+  "name": "linode-api",
+  "description": "Linode API client",
+  "keywords": ["linode", "api", "client"],
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fictorial/linode-api.git"
+  },
+  "engines": {
+    "node": "0.4.x"
+  },
+  "dependencies": {
+    "request": "1.x.x"
+  }
+}
