@@ -13,10 +13,11 @@ Your API key can be found [here](https://manager.linode.com/profile/).
 ## Usage
 
 ````javascript
+var my_api_key = '...';
 var client = new(require('linode-api').LinodeClient)(my_api_key);
 client.call('test.echo', {msg: "hello, self!"}, function (err, res) {
   if (err) throw err;
-  console.log("I said " + res + " to myself. Whee!");
+  console.log("I said '" + res.msg + "' to myself. Whee!");
 });
 ````
 

@@ -3,7 +3,8 @@
   "name": "linode-api",
   "description": "Linode API client",
   "keywords": ["linode", "api", "client"],
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "main": "lib/linode-api.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/fictorial/linode-api.git"
