@@ -3,7 +3,7 @@
   "name": "linode-api",
   "description": "Linode API client",
   "keywords": ["linode", "api", "client"],
-  "version": "0.0.3",
+  "version": "0.1.0",
   "main": "lib/linode-api.js",
   "bin": {
     "linode-client": "bin/linode-client.coffee"

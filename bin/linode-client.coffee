@@ -3,7 +3,7 @@
 # Linode API CLI interface
 # Brian Hammond <brian@fictorial.com> https://github.com/fictorial/linode-api
 
-{LinodeClient, dump_api} = require '../src/linode-api'
+{LinodeClient, dump_api} = require 'linode-api'
 util = require 'util'
 
 opts = (require 'optimist')
