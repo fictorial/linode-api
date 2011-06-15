@@ -1,7 +1,13 @@
-all: compile test
+all: lib test
 
-compile:
+lib:
 	coffee -c -o lib src/linode-api.coffee
+
+bin:
+	coffee -c -o bin src/linode-client.coffee
+	@( echo "#!/usr/bin/env node"; cat bin/linode-client.js ) >.tmp$$
+	@mv .tmp$$ bin/linode-client.js
+	chmod +x bin/linode-client.js
 
 api:
 	tools/generate-api.coffee
@@ -9,10 +15,10 @@ api:
 test:
 	nodeunit test/test.coffee
 
-npm: compile test
+npm: lib test bin
 	npm publish .
 
 clean:
 	rm -rf bin api
 
-.PHONY: all compile npm clean api test
+.PHONY: all lib npm clean api test bin

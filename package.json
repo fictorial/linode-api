@@ -3,10 +3,10 @@
   "name": "linode-api",
   "description": "Linode API client",
   "keywords": ["linode", "api", "client"],
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/linode-api.js",
   "bin": {
-    "linode-client": "bin/linode-client.coffee"
+    "linode-client": "bin/linode-client.js"
   },
   "repository": {
     "type": "git",
@@ -16,7 +16,6 @@
     "node": "0.4.x"
   },
   "dependencies": {
-    "coffee-script": "1.x.x",
     "optimist": "0.x.x",
     "request": "1.x.x"
   }
