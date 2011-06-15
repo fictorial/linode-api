@@ -3,7 +3,7 @@
   "name": "linode-api",
   "description": "Linode API client",
   "keywords": ["linode", "api", "client"],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "main": "lib/linode-api.js",
   "bin": {
     "linode-client": "bin/linode-client.js"
@@ -16,7 +16,10 @@
     "node": "0.4.x"
   },
   "dependencies": {
-    "optimist": "0.x.x",
-    "request": "1.x.x"
+    "optimist": "0.2.x",
+    "request": "1.9.x"
+  },
+  "devDependencies": {
+    "nodeunit": "0.5.x"
   }
 }
