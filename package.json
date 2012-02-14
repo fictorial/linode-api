@@ -13,7 +13,7 @@
     "url": "git://github.com/fictorial/linode-api.git"
   },
   "engines": {
-    "node": "0.4.x"
+    "node": ">= 0.4"
   },
   "dependencies": {
     "optimist": "0.2.x",
