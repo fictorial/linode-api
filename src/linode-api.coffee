@@ -19,10 +19,10 @@ class LinodeClient
     uri = "#{@base_uri}&api_action=#{action}&#{qs.stringify args}"
     request {uri}, (err, res, body) ->
       obj = JSON.parse body
-      if obj.ERRORARRAY.length > 0
+      if obj.ERRORARRAY && obj.ERRORARRAY.length > 0
         callback obj.ERRORARRAY[0].ERRORMESSAGE, undefined
       else
-        callback undefined, obj.DATA
+        callback undefined, obj.DATA?obj.DATA:obj
 
 exports.LinodeClient = LinodeClient
 
